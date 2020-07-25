@@ -1,0 +1,106 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+body{
+     background-color: rgb(175, 240, 240);
+}
+.container{ 
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgb(241, 214, 219);
+    padding: 30px;
+}
+
+
+.profile-image{
+    width: 90px;
+    height: 90px ;
+    border: 3px solid whitesmoke;
+    border-radius: 50%;
+    float: left;
+}
+.header-bio{
+    float: left;
+    padding: 30px;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #11999e;
+}
+.header-contact{
+    float: right;
+    padding: 30px;
+
+}
+.header-contact a{
+     text-decoration: none;
+     color: teal;
+     font-weight: bold;
+     font-size: small;
+}
+.header-contact a:hover{
+    text-decoration: underline;
+    color: palevioletred;   
+} 
+.div-clear{
+    clear: both;
+}
+
+    
+hr{
+    border: solid black 3px;
+    width: 100%;
+    margin: 20px auto;
+    border-bottom: none;
+}
+.content{
+    
+}
+.left-div{
+    width: 30%;
+    float: left;
+}
+.right-div{
+    width: 70%;
+    float: right;
+}
+.bc{
+    color: #11999e;
+}
+.common-hr{
+    border: solid rgb(92, 87, 87) 1px;
+    width: 100;
+    margin: 20px auto;
+    border-bottom: none;
+    
+}
+.edu-left{
+    float: left;
+    width: 45%;
+}
+
+.edu-right{
+    float: right;
+    width: 45%;
+}
+.mbstu{
+    color: rgb(44, 116, 106);
+}
+.bottom{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+.bottom a{
+    color: rgb(241, 214, 219);
+    text-decoration: none;
+    margin: 20px;
+}
+.bottom a:hover{
+    text-decoration: none;
+     color: rgb(175, 240, 240);
+}
+.bottom p{
+    color: rgb(241, 214, 219);
+    margin-top: 20px;
+}
