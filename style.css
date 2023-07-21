@@ -267,8 +267,17 @@ h5 {
     }
 }
 
-@media (maz-aspect-ratio: 2/3) {
-    .home-content p {
-        visibility: hidden;
+@media (max-aspect-ratio: 1/1) {
+    .nava {
+           display: inline-block;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
     }
 }
