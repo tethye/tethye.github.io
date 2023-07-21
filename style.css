@@ -90,6 +90,7 @@ body {
 }
 
 .cont:hover {
+    text-decoration:none;
     color: crimson;
 }
 
