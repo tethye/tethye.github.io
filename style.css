@@ -197,6 +197,7 @@ h5 {
 }
 
 .btn-box:hover {
+    text-decoration: none;
     box-shadow: 0 0 5px rgb(154, 181, 183), 0 0 25px rgb(154, 181, 183), 0 0 50px rgb(154, 181, 183), 0 0 100px rgb(154, 181, 183), 0 0 200px rgb(154, 181, 183)
 }
 
