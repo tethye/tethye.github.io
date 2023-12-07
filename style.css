@@ -103,6 +103,10 @@ h3 {
     animation-delay: .7s;
 }
 
+video {
+    border-radius: 70px;
+}
+
 h3:hover {
     -webkit-text-stroke: 2px #fff;
     color: transparent;
