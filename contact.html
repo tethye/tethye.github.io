@@ -65,6 +65,10 @@
                     <b>Phone: </b>
                     <a href="tel: 01710220316" class="cont">+8801710220316</a> <br>
                 </p>
+                <form id ="sendemail" class="input-group mb-3" action="" method="get">
+                    <input type="text" id ="asking" class="form-control" placeholder="Ask me anything..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="submit">Submit</button>
+                </form>
                 <a href="img/Afra_Ibnat_Tethye_Resume.pdf" class="btn-box">Download CV</a>
 
             </div>
@@ -79,7 +83,32 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+     </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("UOPqeZVX7UMijUHWM"); // Replace with your EmailJS user ID
+        })();
 
+        document.getElementById("submit").addEventListener("click", function(event) {
+            event.preventDefault();
+
+            const input1 = document.getElementById("asking").value;
+
+            const templateParams = {
+                message: input1,
+                to_email: 'afraibnat001@gmail.com' // Replace with your email address
+            };
+            emailjs.send('service_9wn8uph', 'template_js09u9j', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+            alert('Email Sent...');
+        });
+    </script>
 </body>
 
 </html>
